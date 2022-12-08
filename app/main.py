@@ -2,6 +2,8 @@ from fastapi import FastAPI, Path, Query, HTTPException, status
 from pydantic import BaseModel
 from typing import Optional
 
+import uvicorn
+
 app = FastAPI()
 
 class Product(BaseModel):
